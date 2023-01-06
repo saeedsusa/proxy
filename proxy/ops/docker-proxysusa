@@ -2,11 +2,11 @@
 #
 # License found in the LICENSE file in the root directory
 # of this source tree.
-version: '3.3'
+version: '3.3'3'
 
 services:
   proxy:
-    container_name: whatsapp_proxy
+    container_name: whatsapp_proxysusan
     build: ../
     restart: unless-stopped
     ports:
@@ -21,5 +21,6 @@ services:
       test: /usr/local/bin/healthcheck.sh
       interval: 10s
       start_period: 5s
-    environment:
+    environment:smsusun
       - PUBLIC_IP=10.0.0.1
+
