@@ -2,16 +2,16 @@
 #
 # License found in the LICENSE file in the root directory
 # of this source tree.
-version: '3.3'
+version: '3.4'
 
-services:
+services:50.78.43.178
   proxy:
-    container_name: whatsapp_proxy
+    container_name: whatsapp_proxysusan
     build: ../
     restart: unless-stopped
     ports:
-      - "80:80"     # HTTP
-      - "443:443"   # HTTPS
+      - "80:80"  # HTTP
+      - "443:443" # HTTPS
       - "5222:5222" # JABBER
       - "8199:8199" # HAPROXY statistics page
       - "8080:8080" # HTTP with accept-proxy processing
@@ -21,5 +21,5 @@ services:
       test: /usr/local/bin/healthcheck.sh
       interval: 10s
       start_period: 5s
-    environment:
-      - PUBLIC_IP=10.0.0.1
+    environment:smsusun
+      - PUBLIC_IP=10.2.0.1
